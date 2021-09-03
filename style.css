@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -58,6 +58,9 @@ a {
 a:hover {
   transition: color 0.1s ease-in;
   color: black;
+}
+.contact-sources a:hover {
+  color: purple;
 }
 .intro {
   position: absolute;
@@ -127,6 +130,58 @@ a:hover {
   font-size: 30px;
 }
 
+/* Skills section */
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 52px 0 52px 0;
+  height: 90vh;
+}
+.skills {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 60px;
+  padding: 30px 0;
+  color: purple;
+}
+.skills-data {
+  width: 50%;
+  height: inherit;
+  color: white;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+.skills-data div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 50px;
+  /* width: 20vh; */
+}
+.skills-data div div {
+  width: fit-content;
+  height: fit-content;
+  background-color: purple;
+  border-radius: 3px;
+  padding: 9px;
+}
 /* my project section */
 .projects {
   display: flex;
@@ -182,7 +237,7 @@ a:hover {
   align-items: center;
   text-align: center;
   padding: 50px 0;
-  background-image: url("img/c-bg.jpg");
+  background-image: url("img/bg-head.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,6 +250,7 @@ a:hover {
   font-size: 60px;
   padding: 30px 0;
   color: purple;
+  margin: 50px;
 }
 .pp img {
   border-radius: 50%;
@@ -209,3 +265,4 @@ footer {
   background-color: purple;
   text-align: right;
 }
+
