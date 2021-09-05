@@ -276,6 +276,7 @@ footer {
   }
   .allProjects {
     flex-direction: column;
+    font-size: 18px
   }
   .projectName {
     flex-direction: row;
