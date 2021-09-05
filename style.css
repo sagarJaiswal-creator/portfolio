@@ -31,7 +31,7 @@ nav ul {
   /* background-color: pink; */
 
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 nav ul span {
   margin-right: 20px;
@@ -65,16 +65,18 @@ a:hover {
 .intro {
   position: absolute;
   top: 30vh;
-  left: 25vh;
+  left: 30px;
   border: 1px solid black;
   padding: 8px;
-  color: white;
+  color: rgb(255, 255, 255);
   box-shadow: 5px 0px 5px black;
   font-size: 60px;
 }
+
 .intro b {
   color: purple;
 }
+
 .my-workBtn {
   position: relative;
   z-index: 1;
@@ -90,8 +92,8 @@ a:hover {
   transform: translateY(-36px);
 }
 /* .my-workBtn:hover {
-    background-color: purple;
-  } */
+      background-color: purple;
+    } */
 .my-workBtn-bg {
   transition: all 0.3s ease-in;
   height: 32.5px;
@@ -112,6 +114,13 @@ a:hover {
   background-attachment: fixed;
   padding: 52px 0 52px 0;
   height: 90vh;
+  /* width: 106%; */
+}
+@media screen and (max-width: 700) {
+  .aboutSection {
+    font-size: 30px;
+    color: red;
+  }
 }
 
 .about {
@@ -130,58 +139,6 @@ a:hover {
   font-size: 30px;
 }
 
-/* Skills section */
-
-.skillsSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-image: url("img/img2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 52px 0 52px 0;
-  height: 90vh;
-}
-.skills {
-  width: 100%;
-  height: 60px;
-  background: transparent;
-  font-size: 60px;
-  padding: 30px 0;
-  color: purple;
-}
-.skills-data {
-  width: 50%;
-  height: inherit;
-  color: white;
-  margin: 20px 0;
-  padding: 10px;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  /* justify-content: space-around; */
-}
-.skills-data div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  margin: 0 50px;
-  /* width: 20vh; */
-}
-.skills-data div div {
-  width: fit-content;
-  height: fit-content;
-  background-color: purple;
-  border-radius: 3px;
-  padding: 9px;
-}
 /* my project section */
 .projects {
   display: flex;
@@ -190,6 +147,7 @@ a:hover {
   text-align: center;
   margin: 50px 0;
   height: 90vh;
+  color: aliceblue;
 }
 
 .my-projects {
@@ -225,9 +183,42 @@ a:hover {
 }
 .aboutProject {
   align-items: center;
-  width: 417px;
+  width: 60%;
   height: 188px;
   display: flex;
+}
+
+/* Skills section */
+.skillsSection {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.skills {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 60px;
+  padding: 30px 0;
+  color: purple;
+}
+.skills-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-data div {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.skills-data div div {
+  padding: 5px;
+  background-color: purple;
+  margin: 5px;
 }
 
 /* Contact section */
@@ -259,9 +250,37 @@ a:hover {
 .contact-sources {
   font-size: 25px;
 }
-
-/* footer */
 footer {
   background-color: purple;
-  text-align: right;
+  font-size: 10px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* responsive */
+@media screen and (max-width: 600px) {
+  .intro {
+    font-size: 30px;
+  }
+  .about {
+    font-size: 30px;
+  }
+  .about-data {
+    font-size: 15px;
+  }
+  nav ul span {
+    font-size: 15px;
+  }
+  .my-projects {
+    font-size: 30px;
+  }
+  .allProjects {
+    flex-direction: column;
+  }
+  .projectName {
+    flex-direction: row;
+    text-align: center;
+  }
+  .contact-sources {
+    font-size: 15px;
+  }
 }
