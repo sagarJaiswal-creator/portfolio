@@ -188,6 +188,9 @@ a:hover {
   height: 188px;
   display: flex;
 }
+.aboutProject2{
+display:none;
+}
 
 /* Skills section */
 .skillsSection {
@@ -284,5 +287,11 @@ footer {
   }
   .contact-sources {
     font-size: 15px;
+  }
+  .aboutProject2{
+  display:block;
+  }
+  .aboutProject1{
+  display:none;
   }
 }
