@@ -7,13 +7,13 @@ $(".connect4").click(function (e) {
   $(".connect4").css("background-color", "purple");
 });
 
-$(".sudoku").click(function (e) {
+$(".shootingGame").click(function (e) {
   e.preventDefault();
   $(".aboutProject").text(
-    "Sudoko Web App is a game solver which facilitates the user solve the puzzle with the options of remake and solve."
+    "It is a shooting game where you have to shoot and destroy the enemy coming at you and if they reach you it's game over"
   );
   $(".projectName div").css("background", "transparent");
-  $(".sudoku").css("background-color", "purple");
+  $(".shootingGame").css("background-color", "purple");
 });
 
 $(".social-site").click(function (e) {
