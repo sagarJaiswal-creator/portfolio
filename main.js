@@ -10,7 +10,7 @@ $(".connect4").click(function (e) {
 $(".shootingGame").click(function (e) {
   e.preventDefault();
   $(".aboutProject").text(
-    "It is a shooting game where you have to shoot and destroy the enemy coming at you and if they reach you it's game over"
+    "It is a shooting game where you have to shoot and destroy the enemy coming at you and if they reach you it's game over. `</br>` languages used are HTML,CSS,javascript"
   );
   $(".projectName div").css("background", "transparent");
   $(".shootingGame").css("background-color", "purple");
