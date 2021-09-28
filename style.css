@@ -274,9 +274,7 @@ footer {
   nav ul span {
     font-size: 15px;
   }
-  .my-projects {
-    font-size: 30px;
-  }
+
   .allProjects {
     flex-direction: column;
     font-size: 18px
