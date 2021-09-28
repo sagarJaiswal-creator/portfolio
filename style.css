@@ -262,12 +262,15 @@ footer {
 }
 /* responsive */
 @media screen and (max-width: 600px) {
+  .about{
+  font-size:40px;
+  }
   .intro {
     font-size: 30px;
   }
 
   .about-data {
-    font-size: 15px;
+    font-size: 20px;
   }
   nav ul span {
     font-size: 15px;
